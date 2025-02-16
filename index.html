@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>coursera project
+    </title>
+    <link rel="stylesheet" href="styleproject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    
+
+</head>
+<body>
+    <header id="top">
+        <h1>Michael Thompson</h1>   
+    </header>
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p><i class="fas fa-phone"></i><a href="+306987218821" >+306987218821</a></p>
+        <p><i class="fas fa-envelope"></i><a href="michaelthompson1998@gmail.com">michaelthompson1998@gmail.com</a> </p>
+    </section>
+    <nav class="top-menu">
+        
+        <a href="#top" id="home-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.251-3-3m0 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+        </a>
+               
+                <button onclick="toggleAbout()">About Me</button>
+                <button onclick="toggleSkills()">Skills</button>
+                <button onclick="toggleProjects()">Projects</button>
+                <button onclick="toggleRecommendations()">recommendations</button>
+                
+    </nav>
+    <section id="about" class="container">
+        <div class="image-container">
+            <img src="https://cdn.pixabay.com/photo/2023/11/21/13/29/ai-generated-8403411_1280.jpg" class="profile-image">
+    
+
+        </div>
+        <div>
+            <h1>Hi I am Michael Thompson <img src="https://cdn.pixabay.com/photo/2016/10/14/18/39/emotion-1740913_1280.png"width="60px"></h1>
+            <p>I have graduate as an automation engineer, but now i am looking for a change in my career path. I am interested in front engineering and i am looking for an opportunity to work in this field. I have some experience in IOT but not in front end engineering. I am a fast learner and i am willing to learn new things.Also i am a team player and i am looking forward to work with you.
+            </p>
+        </div>
+</section>
+<section id="skills" class="container">
+   <div class="skills">
+    <img src="https://cdn.pixabay.com/photo/2014/04/03/11/55/snake-312561_1280.png" alt="python">
+        <p>2 years of experience with python</p>
+   </div>
+   <div class="skills">
+    <img src="https://cdn.pixabay.com/photo/2016/11/19/22/32/css3-1841488_1280.jpg" alt="css">
+    <p>1 year of experience with css</p>
+   </div>
+   <div class="skills">
+    <img src="https://cdn.pixabay.com/photo/2017/03/23/12/32/arduino-2168193_1280.png" alt="arduino">
+    <p>2 years of job experience with arduino</p>
+   </div>
+    <div class="skills">
+        <img src="https://cdn.pixabay.com/photo/2014/04/03/11/08/tea-311845_1280.png" alt="java">
+        <p>6 months of experience with java</p>
+            </div>
+            </section>
+            <section id="projects" class="container">
+                <h2>Projects</h2>
+                <div class="projects card">
+                    <h3>Personal portofolio</h3>
+                    <p>I have been part of a fully electric car created for an event.The car had finished at the 2nd place</p>
+                    </div>
+            <div class="projects card">
+                <h3>reverse programming</h3>
+               <p> I have create and upload in my github portofolio a reverse programming project that i have created in my free time.</p>
+
+            </div>
+            </section>
+        </div>
+    </div>
+    <section id="recommendations" class="container">
+        <h2>Recommendations</h2>
+        <div id="recommendation-container">
+            <div class="recommendation card">
+                <p>Working with Michael was a fun experience</p>
+                </div>
+                <div class="recommendation card">
+            <p> Michael loves to learn new things and he is one of the best team players who i know.</p>
+                </div>
+                </div>
+                <label for="recommendation-input">Write your recommendation:</label>
+                <input type="text" id="recommendation-input" placeholder="Write your recommendation..." />
+
+                <button id="recommend_btn" onclick="addRecommendation()">Add recommendation</button>
+            </section>
+            <div id="popup" style="display: none;">
+                <p>Thanks for leaving a recommendation!</p>
+                <button onclick="showPopup(false)">Ok</button>
+            </div>
+            
+<script src="script.js"></script>  
+</body>
+</html>
